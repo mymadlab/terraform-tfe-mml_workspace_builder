@@ -4,7 +4,7 @@ module "tfe_workspace_manager" {
 
   workspace_name       = var.name
   tfe_org           = var.tfe_org
-  tags = var.tags
+  tags = [var.tags, [var.name]]
   vcs_provider_name = var.vcs_provider_name
   github_org        = var.github_org
 
@@ -20,5 +20,4 @@ module "github_repository_manager" {
   wiki        = var.wiki
   repo_type   = "workspace"
   product     = "terraform"
-  tags = [var.tags, [var.name]]
 }
