@@ -12,7 +12,7 @@ module "tfe_workspace_manager" {
 
 module "github_repository_manager" {
   source  = "app.terraform.io/mymadlab/mml_repository_manager/github"
-  version = "1.0.0"
+  version = "1.0.1"
 
   repo_name   = var.name
   description = var.description
@@ -20,5 +20,5 @@ module "github_repository_manager" {
   wiki        = var.wiki
   repo_type   = "workspace"
   product     = "terraform"
-
+  tags = [var.tags, [var.name]]
 }
