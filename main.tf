@@ -4,7 +4,7 @@ module "tfe_workspace_manager" {
 
   workspace_name       = var.name
   tfe_org           = var.tfe_org
-  tags = [var.tags, [var.name]]
+  tags = concat([var.tags, [var.name]])
   vcs_provider_name = var.vcs_provider_name
   github_org        = var.github_org
 
