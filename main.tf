@@ -1,6 +1,6 @@
 module "tfe_workspace_manager" {
   source  = "app.terraform.io/mymadlab/mml_workspace_manager/tfe"
-  version = ">=1.1.0"
+  version = "~> 1.1.0"
 
   workspace_name    = var.name
   tfe_org           = var.tfe_org
@@ -12,7 +12,7 @@ module "tfe_workspace_manager" {
 
 module "github_repository_manager" {
   source  = "app.terraform.io/mymadlab/mml_repository_manager/github"
-  version = ">=1.0.0"
+  version = "~> 1.0.0"
 
   repo_name   = var.name
   description = var.description
