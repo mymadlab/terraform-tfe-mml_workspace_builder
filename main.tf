@@ -20,4 +20,6 @@ module "github_repository_manager" {
   wiki        = var.wiki
   repo_type   = "workspace"
   product     = "terraform"
+
+  depends_on = [ module.tfe_workspace_manager.module ]
 }
