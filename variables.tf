@@ -14,13 +14,13 @@ variable "description" {
 variable "visibility" {
   description = "Github repository visibility setting"
   type        = string
-  default = "public"
+  default     = "public"
 }
 
 variable "wiki" {
   description = "Turns the Github wiki on and off"
   type        = bool
-  default = false
+  default     = false
 }
 
 # TFE connectivity variables
