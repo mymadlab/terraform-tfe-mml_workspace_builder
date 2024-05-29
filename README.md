@@ -9,7 +9,7 @@ Responsible for building workspaces with a link repository
 ```HCL
 module "facility_infra_workspaces" {
   source  = "app.terraform.io/mymadlab/mml_workspace_builder/tfe"
-  version = "~> 1.1.0"
+  version = "~> 0.1.0"
 
   name = "name_of_the_workspace"
   description = "Description of the workspace being created"
