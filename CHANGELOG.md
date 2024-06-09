@@ -18,15 +18,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
  -->
 
-## [v1.1.7] - 2024-04-20: Module cleanup work
+## [v0.2.0] - 2024-06-09: Terraform Version
 
 ### Added
 
-- Change Log
-- Reference to the tfe and github provider with versions
-- Required terraform version
+- Support for specifying the terraform version used by the workspace
+- Set the workspace creation to depend on the creation of the repo
 
-### Changed
-
-- Updates to README to properly document the module
-- Added description to input variables

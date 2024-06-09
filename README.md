@@ -9,14 +9,15 @@ Responsible for building workspaces with a link repository
 ```HCL
 module "facility_infra_workspaces" {
   source  = "app.terraform.io/mymadlab/mml_workspace_builder/tfe"
-  version = "~> 0.1.0"
+  version = "~>0.2.0"
 
-  name = "name_of_the_workspace"
   description = "Description of the workspace being created"
+  github_org        = "name_of_github_org"
+  name = "name_of_the_workspace"
+  tags = ["list", "of, "tags"]
+  terraform_version = "~>1.7.0"
   tfe_org           = "name_of_TFE_org"
   vcs_provider_name = "my_vcs_provider_name_here"
-  github_org        = "name_of_github_org"
-  tags = ["list", "of, "tags"]
 }
 ```
 
