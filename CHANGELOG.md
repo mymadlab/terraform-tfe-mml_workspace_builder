@@ -23,3 +23,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Support for specifying the terraform version used by the workspace
+- Set the workspace creation to depend on the creation of the repo
+

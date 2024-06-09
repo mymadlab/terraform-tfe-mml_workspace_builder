@@ -25,8 +25,8 @@ variable "tags" {
 
 variable "terraform_version" {
   description = "Version of terraform to be run by the workspace"
-  default = "~>1.7.0"
-  type = string
+  default     = "~>1.7.0"
+  type        = string
 }
 
 variable "tfe_org" {

@@ -19,8 +19,9 @@ module "tfe_workspace_manager" {
   tfe_org           = var.tfe_org
   tags              = concat(var.tags, [var.name])
   vcs_provider_name = var.vcs_provider_name
+  terraform_version = var.terraform_version
   github_org        = var.github_org
 
-  depends_on = [ module.tfe_workspace_manager.module ]
+  depends_on = [module.tfe_workspace_manager.module]
 
 }
