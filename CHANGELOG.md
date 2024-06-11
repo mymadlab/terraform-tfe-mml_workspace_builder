@@ -18,6 +18,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
  -->
 
+## [v0.3.0] - 2024-06-09: Terraform Version
+
+### Changed
+
+- Update repository manager module to v0.2.0 to support protected branches
+
 ## [v0.2.0] - 2024-06-09: Terraform Version
 
 ### Added

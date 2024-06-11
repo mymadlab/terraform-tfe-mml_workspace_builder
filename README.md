@@ -9,7 +9,7 @@ Responsible for building workspaces with a link repository
 ```HCL
 module "facility_infra_workspaces" {
   source  = "app.terraform.io/mymadlab/mml_workspace_builder/tfe"
-  version = "~>0.2.0"
+  version = "~>0.3.0"
 
   description = "Description of the workspace being created"
   github_org        = "name_of_github_org"
@@ -24,4 +24,4 @@ module "facility_infra_workspaces" {
 ## Dependencies
 
 - [hashicorp/tfe](https://registry.terraform.io/providers/hashicorp/tfe/latest): >=0.52.0
-- [integrations/github](https://registry.terraform.io/providers/integrations/github/latest): >=6.0.1
+- [integrations/github](https://registry.terraform.io/providers/integrations/github/latest): >=6.2.0
